@@ -13,6 +13,30 @@ Daje repozitoriju trajni operativni okvir za:
 
 Ne propisuje engine. Web igre, Godot, Unity i drugi runtime-i koriste isti operativni ugovor, dok engine-specifične stvari ostaju lokalne projektu.
 
+## Šta ovo znači ako krećeš od nule
+
+OGF ti ne daje game engine niti gotovu igru. Daje novom game projektu mali operativni sistem, tako da ne moraš izmišljati kako ćeš voditi projekat dok istovremeno pokušavaš napraviti igru.
+
+Od prvog playable prototipa dobiješ jasno mjesto gdje možeš odgovoriti:
+
+- Šta je ovaj projekat trenutno?
+- Koji build/verziju upravo testiramo?
+- Kako znamo da je repo mehanički zdrav?
+- Šta još mora provjeriti čovjek kroz playtest?
+- Koji bug je samo popravljen, a koji je stvarno ponovo provjeren?
+- Zašto smo donijeli važnu tehničku ili produktnu odluku?
+- Šta Claude, Codex, drugi agent ili novi developer treba pročitati prije izmjene?
+
+Praktično:
+
+- engine/runtime pravi igru;
+- Git čuva historiju koda;
+- OGF čuva smisao projekta, validaciju, playtest evidence, odluke i release stanje razumljivim kroz vrijeme.
+
+Najmanji koristan setup je namjerno mali: identitet projekta, jedna validation komanda, repository/agent pravila, minimalna build/testing dokumentacija i jedan release zapis. Advanced review, experiment, risk, benchmark i retro moduli uključuju se tek kada projekat dovoljno naraste.
+
+Ako radiš sam, OGF prvenstveno smanjuje gubitak konteksta. Kada uključiš drugog developera, coding agente, više buildova ili vanjske playtestere, vrijednost brzo raste jer svi rade iz iste projektne istine u repou umjesto iz rekonstruisane chat historije.
+
 ## Brzi početak
 
 Najbrže:
