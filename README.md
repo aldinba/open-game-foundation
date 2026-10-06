@@ -16,6 +16,30 @@ It gives a game repository a durable operating system for:
 
 It does **not** prescribe an engine. Browser-native games, Godot, Unity and future runtimes can use the same operating contract.
 
+## What this means if you start from zero
+
+OGF does not give you a game engine or a finished game. It gives your new game project a small operating system so you do not have to invent project discipline while you are trying to build the game.
+
+From the first playable prototype, it gives you a place to answer:
+
+- What is this project right now?
+- Which build/version are we testing?
+- How do we know the repository is mechanically healthy?
+- What still needs human playtesting?
+- Which bugs are merely fixed, and which were actually verified?
+- Why did we make an important technical or product decision?
+- What should Claude, Codex, another agent or a new developer read before changing something?
+
+In practice:
+
+- your engine/runtime builds the game;
+- Git stores code history;
+- OGF keeps project intent, validation, playtest evidence, decisions and release state understandable over time.
+
+The smallest useful setup is intentionally small: project identity, one validation command, agent/repository instructions, minimal build/testing documentation and one release record. The advanced review, experiment, risk, benchmark and retro modules are there only when the project grows enough to need them.
+
+If you work alone, OGF mainly reduces forgotten context. If you add another developer, coding agents, multiple builds or external playtesters, its value increases quickly because everyone works from the same repository truth instead of reconstructed chat history.
+
 ## Quick start
 
 Fastest path:
