@@ -1,5 +1,8 @@
 # Open Game Foundation
 
+[![Release](https://img.shields.io/github/v/release/aldinba/open-game-foundation)](https://github.com/aldinba/open-game-foundation/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Runtime-agnostic project foundation for small and medium game teams working with humans and coding agents.
 
 It gives a game repository a durable operating system for:
