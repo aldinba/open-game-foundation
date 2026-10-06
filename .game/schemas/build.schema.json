@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Freebit game build manifest",
+  "type": "object",
+  "required": ["schemaVersion", "project", "version", "channel", "phase", "runtime", "platform", "createdAt", "commit", "dirty", "checks"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "project": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]{3}$" },
+    "channel": { "enum": ["internal", "playtest", "public-demo"] },
+    "phase": { "type": "string", "minLength": 1 },
+    "runtime": { "type": "string", "minLength": 1, "description": "Project-defined runtime/engine identifier such as browser, godot, unity or another value." },
+    "platform": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "commit": { "type": "string", "minLength": 7 },
+    "dirty": { "type": "boolean" },
+    "checks": { "type": "object" },
+    "artifact": { "type": ["string", "null"] }
+  },
+  "additionalProperties": true
+}

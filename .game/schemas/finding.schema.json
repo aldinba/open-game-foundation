@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Freebit game finding",
+  "type": "object",
+  "required": ["id", "title", "type", "priority", "area", "status", "foundIn", "description", "evidence", "expected", "observed"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "minLength": 3 },
+    "title": { "type": "string", "minLength": 3 },
+    "type": { "enum": ["BUG", "ENHANCEMENT", "GAMEPLAY_POLISH", "QOL", "UX"] },
+    "priority": { "enum": ["P0", "P1", "P2", "P3"] },
+    "area": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["NEW", "CONFIRMED", "IN_PROGRESS", "FIXED", "VERIFIED", "DEFERRED", "WONT_FIX"] },
+    "foundIn": { "type": "string", "minLength": 1 },
+    "fixedIn": { "type": ["string", "null"] },
+    "device": { "type": ["string", "null"] },
+    "platform": { "type": ["string", "null"] },
+    "description": { "type": "string", "minLength": 1 },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "expected": { "type": "string" },
+    "observed": { "type": "string" },
+    "proposedSolution": { "type": ["string", "null"] },
+    "verification": { "type": ["string", "null"] }
+  },
+  "additionalProperties": true
+}

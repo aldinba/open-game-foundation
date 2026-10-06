@@ -1,0 +1,23 @@
+name: Foundation improvement
+description: Suggest a broadly reusable improvement.
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: recurring-problem
+    attributes:
+      label: Recurring problem
+      description: Which repeated game-development problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / projects
+      description: Where have you seen this problem in practice?
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed generic solution
+    validations:
+      required: true

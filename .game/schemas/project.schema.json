@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Freebit game project manifest",
+  "type": "object",
+  "required": ["schemaVersion", "slug", "title", "phase", "milestone", "buildSequence", "displayVersion", "defaultChannel", "primaryRuntime", "implementationRoot", "releaseRecordRoot", "localArtifactRoot"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "phase": { "type": "string", "minLength": 1 },
+    "milestone": { "type": "string", "minLength": 1 },
+    "buildSequence": { "type": "integer", "minimum": 1 },
+    "displayVersion": { "type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]{3}$" },
+    "defaultChannel": { "enum": ["internal", "playtest", "public-demo"] },
+    "primaryRuntime": { "type": "string", "minLength": 1 },
+    "implementationRoot": { "type": "string", "minLength": 1 },
+    "releaseRecordRoot": { "type": "string", "minLength": 1 },
+    "localArtifactRoot": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}

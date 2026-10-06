@@ -1,0 +1,15 @@
+{
+  "$schema": "./schemas/project.schema.json",
+  "schemaVersion": 1,
+  "slug": "REPLACE_ME",
+  "title": "REPLACE_ME",
+  "phase": "PRE_ALPHA",
+  "milestone": "0.1",
+  "buildSequence": 1,
+  "displayVersion": "v0.1.001",
+  "defaultChannel": "internal",
+  "primaryRuntime": "REPLACE_ME",
+  "implementationRoot": "REPLACE_ME",
+  "releaseRecordRoot": "releases",
+  "localArtifactRoot": "Builds"
+}

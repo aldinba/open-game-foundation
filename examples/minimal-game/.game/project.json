@@ -1,0 +1,15 @@
+{
+  "$schema": "./schemas/project.schema.json",
+  "schemaVersion": 1,
+  "slug": "minimal-browser-game",
+  "title": "Minimal Browser Game",
+  "phase": "PRE_ALPHA",
+  "milestone": "0.1",
+  "buildSequence": 1,
+  "displayVersion": "v0.1.001",
+  "defaultChannel": "internal",
+  "primaryRuntime": "browser",
+  "implementationRoot": "src",
+  "releaseRecordRoot": "releases",
+  "localArtifactRoot": "Builds"
+}
