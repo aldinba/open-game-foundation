@@ -44,6 +44,8 @@ def main() -> int:
     copy_tree(ROOT / "playtests" / "templates", target / "playtests" / "templates")
     copy_tree(ROOT / "releases" / "template", target / "releases" / "template")
     copy_tree(ROOT / "docs", target / "docs")
+    if (ROOT / "AGENT_INDEX.md").exists() and not (target / "AGENT_INDEX.md").exists():
+        shutil.copy2(ROOT / "AGENT_INDEX.md", target / "AGENT_INDEX.md")
 
     agents_target = target / "AGENTS.md"
     if not agents_target.exists():

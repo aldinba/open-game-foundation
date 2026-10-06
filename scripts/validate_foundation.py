@@ -105,6 +105,9 @@ def main() -> int:
     if not (root / "playtests" / "templates" / "SESSION.md").exists():
         warnings.append("playtest session template not present")
 
+    if not (root / "AGENT_INDEX.md").exists():
+        warnings.append("agent discovery index not present: AGENT_INDEX.md")
+
     if errors:
         print("Foundation validation: FAILED")
         for err in errors:

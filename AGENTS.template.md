@@ -7,10 +7,11 @@ The project may use any engine or runtime. Do not assume web, Godot, Unity or an
 Before substantial work:
 
 1. Read `.game/project.json`.
-2. Read the smallest applicable workflow under `.game/workflows/`.
-3. Check active task records under `.game/agents/tasks/`.
-4. Read the relevant living documentation under `docs/` before changing architecture, gameplay rules, controls, build/test, deployment or platform strategy.
-5. Inspect current Git status and preserve unrelated working-tree changes.
+2. Read `AGENT_INDEX.md` when present and use it to locate the smallest relevant project truth.
+3. Read the smallest applicable workflow under `.game/workflows/`.
+4. Check active task records under `.game/agents/tasks/`.
+5. Read the relevant living documentation under `docs/` before changing architecture, gameplay rules, controls, build/test, deployment or platform strategy.
+6. Inspect current Git status and preserve unrelated working-tree changes.
 
 Operational rules:
 
@@ -26,3 +27,5 @@ Operational rules:
 - On handoff, record `RESULT / CHANGES / VALIDATION / BLOCKERS / NEXT`.
 - A non-trivial task is not `DONE` until the owner has checked documentation impact and updated relevant living docs or recorded why no documentation change is needed.
 - New durable architecture/product tradeoffs belong in `docs/decisions/` rather than only in chat or commit messages.
+- Keep facts, assumptions, risks and decisions distinct. Do not present an open assumption as current project truth.
+- Optional review perspectives under `.game/reviews/` are read-only lenses unless a task explicitly assigns implementation work.

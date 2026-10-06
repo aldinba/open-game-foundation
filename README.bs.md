@@ -70,3 +70,5 @@ Za mali prototip ne treba sve odmah. Počni sa:
 Ostalo dodaj kad projekat počne imati više ljudi, više agenata, više platformi ili redovne playtestove.
 
 Kompletan mali primjer je u `examples/minimal-game/`.
+
+Za veće ili neizvjesnije projekte postoji i opcionalni advanced layer: assumptions, risks, experiments, specijalizovane review perspektive, performance benchmark, milestone retro i `AGENT_INDEX.md` za brže snalaženje ljudi i agenata. Pogledaj `docs/OPTIONAL_MODULES.md`.

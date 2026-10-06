@@ -95,6 +95,8 @@ This repository intentionally avoids forcing heavyweight process. Small prototyp
 
 Add the rest as the project grows.
 
+For larger or more uncertain projects, OGF also includes an optional advanced layer for assumptions, risks, experiments, role-based reviews, performance benchmarks, milestone retros and fast agent discovery. See `docs/OPTIONAL_MODULES.md`.
+
 ## Example
 
 See `examples/minimal-game/` for a complete small adoption and `examples/browser/`, `examples/godot/`, and `examples/unity/` for runtime-specific notes.

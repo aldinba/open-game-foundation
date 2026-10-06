@@ -11,3 +11,5 @@ Use it to see how the pieces fit together after adoption:
 - `docs/` stores living project knowledge;
 - `releases/v0.1.001/` records the current build;
 - `playtests/templates/SESSION.md` captures human evidence.
+
+The advanced layer is intentionally not fully adopted here; this example demonstrates the lightweight core.
